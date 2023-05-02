@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-30T18:05:41 IST" name="Default suite" finished-at="2023-04-30T18:05:41 IST" duration-ms="31">
+  <suite started-at="2023-05-02T18:47:26 IST" name="Suite" finished-at="2023-05-02T18:47:45 IST" duration-ms="18753">
     <groups>
     </groups>
-    <test started-at="2023-04-30T18:05:41 IST" name="Default test" finished-at="2023-04-30T18:05:41 IST" duration-ms="31">
-      <class name="RunTimeParametersORmavenParameters.ReadDataFromCommandLine">
-        <test-method signature="readData()[pri:0, instance:RunTimeParametersORmavenParameters.ReadDataFromCommandLine@2ef3eef9]" started-at="2023-04-30T18:05:41 IST" name="readData" finished-at="2023-04-30T18:05:41 IST" duration-ms="8" status="PASS">
+    <test started-at="2023-05-02T18:47:26 IST" name="Test-Runner-1" finished-at="2023-05-02T18:47:44 IST" duration-ms="18585">
+      <class name="SuiteFiles.TestNG_Exe_CreateOrgSaveVerify">
+        <test-method signature="createOrgVerify()[pri:0, instance:SuiteFiles.TestNG_Exe_CreateOrgSaveVerify@2f7298b]" started-at="2023-05-02T18:47:26 IST" name="createOrgVerify" finished-at="2023-05-02T18:47:44 IST" duration-ms="18556" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readData -->
-      </class> <!-- RunTimeParametersORmavenParameters.ReadDataFromCommandLine -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- createOrgVerify -->
+      </class> <!-- SuiteFiles.TestNG_Exe_CreateOrgSaveVerify -->
+    </test> <!-- Test-Runner-1 -->
+    <test started-at="2023-05-02T18:47:26 IST" name="Test-Runner-2" finished-at="2023-05-02T18:47:45 IST" duration-ms="18753">
+      <class name="SuiteFiles.TestNG_Exe_CreateNewContactVerify">
+        <test-method signature="createNewContact()[pri:0, instance:SuiteFiles.TestNG_Exe_CreateNewContactVerify@6c64cb25]" started-at="2023-05-02T18:47:26 IST" name="createNewContact" finished-at="2023-05-02T18:47:45 IST" duration-ms="18730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewContact -->
+      </class> <!-- SuiteFiles.TestNG_Exe_CreateNewContactVerify -->
+    </test> <!-- Test-Runner-2 -->
+  </suite> <!-- Suite -->
 </testng-results>

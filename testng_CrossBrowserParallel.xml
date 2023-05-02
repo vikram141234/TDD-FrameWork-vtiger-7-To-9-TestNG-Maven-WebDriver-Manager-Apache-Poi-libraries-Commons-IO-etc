@@ -5,14 +5,14 @@
   <test thread-count="2" parallel="tests" name="Test-Runner-Chrome">
 	  <parameter name="BROWSER" value="Chrome"></parameter>
     <classes>
-      <class name="TestNG_Exe_Suites_AND_PomClassPracticeSmokeXml.TestNG_Exe_CreateContactWith2DrpDwnsTest"/>
+      <class name="SuiteFiles.TestNG_Exe_CreateNewContactVerify"/>
     </classes>
   </test> <!-- Test -->
   
   <test thread-count="2" parallel="tests" name="Test-Runner-Firefox">
 	  <parameter name="BROWSER" value="Firefox"></parameter>
     <classes>
-      <class name="TestNG_Exe_Suites_AND_PomClassPracticeSmokeXml.TestNG_Exe_CreateContactWith2DrpDwnsTest"/>
+      <class name="SuiteFiles.TestNG_Exe_CreateNewContactVerify"/>
     </classes>
   </test> <!-- Test -->
   

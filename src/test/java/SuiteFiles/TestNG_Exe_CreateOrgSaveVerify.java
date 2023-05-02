@@ -1,4 +1,4 @@
-package TestNG_Exe_Suites_AND_PomClassPracticeSmokeXml;
+package SuiteFiles;
 
 import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;

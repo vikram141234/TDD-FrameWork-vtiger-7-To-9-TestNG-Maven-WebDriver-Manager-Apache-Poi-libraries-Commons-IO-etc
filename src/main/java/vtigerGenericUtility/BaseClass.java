@@ -38,12 +38,12 @@ public class BaseClass {
 		{
 			System.out.println("---Database Connection Successfully---");
 		}
-//      @Parameters("BROWSER")       //To launch browser at Test Level We Can Also launch browser at Test Level        //Only AfterTest For Distributed Parallel Exe
-//	  @BeforeTest
-	  @BeforeClass//(groups={"SmokeSuite","RegressionSuite"})
-		public void bcConfig(/*String BROWSER*/) throws IOException
+      @Parameters("BROWSER")       //To launch browser at Test Level We Can Also launch browser at Test Level        //Only AfterTest For Distributed Parallel Exe
+	  @BeforeTest
+//	  @BeforeClass(groups={"SmokeSuite","RegressionSuite"})
+		public void bcConfig(String BROWSER) throws IOException
 		{  // have to comment Browser in down in args it will read from xml suite file
-			String BROWSER = pUtility.readDataFromPropertyFile("browser");
+			//String BROWSER = pUtility.readDataFromPropertyFile("browser");
 			String URL = pUtility.readDataFromPropertyFile("url");
 			ChromeOptions options=new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");

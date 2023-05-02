@@ -4,13 +4,13 @@
 	
   <test thread-count="2" parallel="tests" name="Test-Runner-1">
     <classes>
-      <class name="TestNG_Exe_Suites_AND_PomClassPracticeSmokeXml.TestNG_Exe_CreateOrgSaveVerifyTest"/>
+      <class name="SuiteFiles.TestNG_Exe_CreateOrgSaveVerify"/>
     </classes>
   </test> <!-- Test -->
   
   <test thread-count="2" parallel="tests" name="Test-Runner-2">
     <classes>
-      <class name="TestNG_Exe_Suites_AND_PomClassPracticeSmokeXml.TestNG_Exe_CreateNewContactVerifyTest"/>
+      <class name="SuiteFiles.TestNG_Exe_CreateNewContactVerify"/>
     </classes>
   </test> <!-- Test -->
   

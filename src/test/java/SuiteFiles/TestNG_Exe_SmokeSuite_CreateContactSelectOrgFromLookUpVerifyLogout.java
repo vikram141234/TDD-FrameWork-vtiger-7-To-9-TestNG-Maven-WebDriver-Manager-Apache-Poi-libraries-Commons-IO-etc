@@ -1,4 +1,4 @@
-package TestNG_Exe_Suites_AND_PomClassPracticeSmokeXml;
+package SuiteFiles;
 
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +21,7 @@ import vtigerObjectRepository.OrganizationInfoPage;
 import vtigerObjectRepository.OrganizationsPage;
 
 public class TestNG_Exe_SmokeSuite_CreateContactSelectOrgFromLookUpVerifyLogout {
+	
 
 	    @Test(groups="SmokeSuite")
 	    public void createConSelectOrgFrmLookupIcon() throws IOException
