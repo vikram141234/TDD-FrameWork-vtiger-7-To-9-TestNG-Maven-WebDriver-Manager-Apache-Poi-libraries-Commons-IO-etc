@@ -20,7 +20,7 @@ import vtigerObjectRepository.OrganizationsPage;
 
 public class TestNG_Exe_CreateOrgVerify {
 
-	@Test(groups="SmokeSuite")
+	@Test//(groups="SmokeSuite")
 	public void createOrgVerify() throws IOException
 	{
 	//Create Object of all Utilities
