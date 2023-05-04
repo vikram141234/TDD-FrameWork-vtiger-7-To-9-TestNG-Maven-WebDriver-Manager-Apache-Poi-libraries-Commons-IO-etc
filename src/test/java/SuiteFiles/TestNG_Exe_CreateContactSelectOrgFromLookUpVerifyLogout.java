@@ -20,7 +20,7 @@ import vtigerObjectRepository.LoginPage;
 import vtigerObjectRepository.OrganizationInfoPage;
 import vtigerObjectRepository.OrganizationsPage;
 
-public class TestNG_Exe_SmokeSuite_CreateContactSelectOrgFromLookUpVerifyLogout {
+public class TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout {
 	
 
 	    @Test

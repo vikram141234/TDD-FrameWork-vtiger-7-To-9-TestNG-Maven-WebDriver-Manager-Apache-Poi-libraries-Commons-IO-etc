@@ -18,7 +18,7 @@ import vtigerObjectRepository.LoginPage;
 import vtigerObjectRepository.OrganizationInfoPage;
 import vtigerObjectRepository.OrganizationsPage;
 
-public class TestNG_Exe_CreateOrgVerify {
+public class TestNG_Exe_SmokeSuite_CreateOrgVerify {
 
 	@Test(groups="SmokeSuite")
 	public void createOrgVerify() throws IOException
