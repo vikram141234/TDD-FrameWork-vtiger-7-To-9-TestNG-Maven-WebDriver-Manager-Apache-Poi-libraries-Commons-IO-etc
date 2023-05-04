@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SuiteFiles.TestNG_Exe_CreateNewContactVerify">
+      <class name="SuiteFiles.TestNG_Exe_SmokeSuite_CreateOrgChemical">
         <methods>
-          <include name="createNewContact"/>
+          <include name="createOrgSelectChemicalFrmDrpDwn"/>
         </methods>
-      </class> <!-- SuiteFiles.TestNG_Exe_CreateNewContactVerify -->
+      </class> <!-- SuiteFiles.TestNG_Exe_SmokeSuite_CreateOrgChemical -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
