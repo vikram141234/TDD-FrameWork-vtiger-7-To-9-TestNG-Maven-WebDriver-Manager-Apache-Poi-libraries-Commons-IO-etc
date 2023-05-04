@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 02 17:50:23 IST 2023</td>
+<td>Started on:</td><td>Wed May 03 19:04:38 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11613 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12033 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='SuiteFiles.TestNG_Exe_CreateContactWith2DrpDwns.createConWith2DrpDwn()'><b>createConWith2DrpDwn</b><br>Test class: SuiteFiles.TestNG_Exe_CreateContactWith2DrpDwns</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
-  (failed to check if window was closed: disconnected: not connected to DevTools)
+<td title='SuiteFiles.TestNG_Exe_CreateNewContactVerify.createNewContact()'><b>createNewContact</b><br>Test class: SuiteFiles.TestNG_Exe_CreateNewContactVerify</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=112.0.5615.138)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;VICKY&apos;, ip: &apos;192.168.98.219&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [16c6e44e5c365042a57ace87de763b1c, findElement {using=name, value=accountname}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63546/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 16c6e44e5c365042a57ace87de763b1c
+Command: [158ae87edd39b70110232de9142144f2, findElement {using=xpath, value=//span[@class=&apos;dvHeaderText&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55124/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 158ae87edd39b70110232de9142144f2
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -101,9 +101,9 @@ Session ID: 16c6e44e5c365042a57ace87de763b1c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at vtigerObjectRepository.CreateNewOrganizationPage.createNewOrg(CreateNewOrganizationPage.java:61)
-	at SuiteFiles.TestNG_Exe_CreateContactWith2DrpDwns.createConWith2DrpDwn(TestNG_Exe_CreateContactWith2DrpDwns.java:70)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.getText(Unknown Source)
+	at vtigerObjectRepository.ContactInfoPage.getContactHeader(ContactInfoPage.java:37)
+	at SuiteFiles.TestNG_Exe_CreateNewContactVerify.createNewContact(TestNG_Exe_CreateNewContactVerify.java:86)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -130,16 +130,16 @@ Session ID: 16c6e44e5c365042a57ace87de763b1c
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1891974590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1891974590'><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
-  (failed to check if window was closed: disconnected: not connected to DevTools)
+</pre></div><a href='#' onClick='toggleBox("stack-trace688722159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace688722159'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=112.0.5615.138)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;VICKY&apos;, ip: &apos;192.168.98.219&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [16c6e44e5c365042a57ace87de763b1c, findElement {using=name, value=accountname}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63546/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 16c6e44e5c365042a57ace87de763b1c
+Command: [158ae87edd39b70110232de9142144f2, findElement {using=xpath, value=//span[@class=&apos;dvHeaderText&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55124/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 158ae87edd39b70110232de9142144f2
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -156,9 +156,9 @@ Session ID: 16c6e44e5c365042a57ace87de763b1c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at vtigerObjectRepository.CreateNewOrganizationPage.createNewOrg(CreateNewOrganizationPage.java:61)
-	at SuiteFiles.TestNG_Exe_CreateContactWith2DrpDwns.createConWith2DrpDwn(TestNG_Exe_CreateContactWith2DrpDwns.java:70)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.getText(Unknown Source)
+	at vtigerObjectRepository.ContactInfoPage.getContactHeader(ContactInfoPage.java:37)
+	at SuiteFiles.TestNG_Exe_CreateNewContactVerify.createNewContact(TestNG_Exe_CreateNewContactVerify.java:86)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -187,7 +187,7 @@ Session ID: 16c6e44e5c365042a57ace87de763b1c
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>11</td>
-<td>SuiteFiles.TestNG_Exe_CreateContactWith2DrpDwns@2f7298b</td></tr>
+<td>SuiteFiles.TestNG_Exe_CreateNewContactVerify@5119fb47</td></tr>
 </table><p>
 </body>
 </html>

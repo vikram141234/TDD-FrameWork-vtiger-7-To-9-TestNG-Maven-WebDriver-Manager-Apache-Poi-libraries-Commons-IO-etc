@@ -8,7 +8,7 @@
 		  </run>
 	  </groups>
     <classes>
-      <class name="vtiger.Practice.CreateOrgVerify"/>
+      <class name="SuiteFiles.TestNG_CreateOrgVerify"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

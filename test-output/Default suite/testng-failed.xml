@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SuiteFiles.TestNG_Exe_CreateContactWith2DrpDwns">
+      <class name="SuiteFiles.TestNG_Exe_CreateNewContactVerify">
         <methods>
-          <include name="createConWith2DrpDwn"/>
+          <include name="createNewContact"/>
         </methods>
-      </class> <!-- SuiteFiles.TestNG_Exe_CreateContactWith2DrpDwns -->
+      </class> <!-- SuiteFiles.TestNG_Exe_CreateNewContactVerify -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

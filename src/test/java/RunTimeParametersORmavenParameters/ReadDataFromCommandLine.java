@@ -8,8 +8,8 @@ public class ReadDataFromCommandLine {
 	public void readData() {
 		String Bvalue = System.getProperty("browser");
 		String Uvalue = System.getProperty("url");
-        String Uname = System.getProperty("uname");
-        String Pwd = System.getProperty("pwd");
+        String Uname = System.getProperty("username");
+        String Pwd = System.getProperty("password");
 		
 		System.out.println(Bvalue);
 		System.out.println(Uvalue);

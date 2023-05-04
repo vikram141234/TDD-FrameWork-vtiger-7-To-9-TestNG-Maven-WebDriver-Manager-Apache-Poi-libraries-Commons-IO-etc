@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="SuiteFiles.TestNG_Exe_CreateOrgSaveVerify"/>
+      <class name="SuiteFiles.TestNG_Exe_CreateOrgVerify"/>
       <class name="SuiteFiles.TestNG_Exe_CreateNewContactVerify"/>
     </classes>
   </test> <!-- Test -->

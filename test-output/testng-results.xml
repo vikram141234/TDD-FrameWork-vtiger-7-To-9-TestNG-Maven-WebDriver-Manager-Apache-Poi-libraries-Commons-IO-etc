@@ -2,24 +2,25 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-02T18:47:26 IST" name="Suite" finished-at="2023-05-02T18:47:45 IST" duration-ms="18753">
+  <suite started-at="2023-05-03T19:06:32 IST" name="Suite" finished-at="2023-05-03T19:07:00 IST" duration-ms="27655">
     <groups>
+      <group name="SmokeSuite">
+        <method signature="TestNG_Exe_CreateOrgVerify.createOrgVerify()[pri:0, instance:SuiteFiles.TestNG_Exe_CreateOrgVerify@20deea7f]" name="createOrgVerify" class="SuiteFiles.TestNG_Exe_CreateOrgVerify"/>
+      </group> <!-- SmokeSuite -->
     </groups>
-    <test started-at="2023-05-02T18:47:26 IST" name="Test-Runner-1" finished-at="2023-05-02T18:47:44 IST" duration-ms="18585">
-      <class name="SuiteFiles.TestNG_Exe_CreateOrgSaveVerify">
-        <test-method signature="createOrgVerify()[pri:0, instance:SuiteFiles.TestNG_Exe_CreateOrgSaveVerify@2f7298b]" started-at="2023-05-02T18:47:26 IST" name="createOrgVerify" finished-at="2023-05-02T18:47:44 IST" duration-ms="18556" status="PASS">
+    <test started-at="2023-05-03T19:06:32 IST" name="Test" finished-at="2023-05-03T19:07:00 IST" duration-ms="27655">
+      <class name="SuiteFiles.TestNG_Exe_CreateOrgVerify">
+        <test-method signature="createOrgVerify()[pri:0, instance:SuiteFiles.TestNG_Exe_CreateOrgVerify@20deea7f]" started-at="2023-05-03T19:06:32 IST" name="createOrgVerify" finished-at="2023-05-03T19:06:47 IST" duration-ms="14465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrgVerify -->
-      </class> <!-- SuiteFiles.TestNG_Exe_CreateOrgSaveVerify -->
-    </test> <!-- Test-Runner-1 -->
-    <test started-at="2023-05-02T18:47:26 IST" name="Test-Runner-2" finished-at="2023-05-02T18:47:45 IST" duration-ms="18753">
+      </class> <!-- SuiteFiles.TestNG_Exe_CreateOrgVerify -->
       <class name="SuiteFiles.TestNG_Exe_CreateNewContactVerify">
-        <test-method signature="createNewContact()[pri:0, instance:SuiteFiles.TestNG_Exe_CreateNewContactVerify@6c64cb25]" started-at="2023-05-02T18:47:26 IST" name="createNewContact" finished-at="2023-05-02T18:47:45 IST" duration-ms="18730" status="PASS">
+        <test-method signature="createNewContact()[pri:0, instance:SuiteFiles.TestNG_Exe_CreateNewContactVerify@192d43ce]" started-at="2023-05-03T19:06:47 IST" name="createNewContact" finished-at="2023-05-03T19:07:00 IST" duration-ms="13152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContact -->
       </class> <!-- SuiteFiles.TestNG_Exe_CreateNewContactVerify -->
-    </test> <!-- Test-Runner-2 -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
