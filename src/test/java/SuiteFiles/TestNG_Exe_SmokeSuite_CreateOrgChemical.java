@@ -1,13 +1,17 @@
 package SuiteFiles;
 
 import java.io.IOException;
+import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import vtigerGenericUtility.ExcelFileUtility;
 import vtigerGenericUtility.JavaUtility;
 import vtigerGenericUtility.PropertyFileUtility;
@@ -15,83 +19,75 @@ import vtigerGenericUtility.WebDriverUtility;
 import vtigerObjectRepository.CreateNewOrganizationPage;
 import vtigerObjectRepository.HomePage;
 import vtigerObjectRepository.LoginPage;
-import vtigerObjectRepository.OrganizationInfoPage;
 import vtigerObjectRepository.OrganizationsPage;
 
-public class TestNG_Exe_SmokeSuite_CreateOrgVerify {
+public class TestNG_Exe_SmokeSuite_CreateOrgChemical {
 
-	@Test(groups="SmokeSuite")
-	public void createOrgVerify() throws IOException
-	{
-	//Create Object of all Utilities
-	JavaUtility jUtil=new JavaUtility();
-	PropertyFileUtility pUtil=new PropertyFileUtility();
-	ExcelFileUtility eUtil=new ExcelFileUtility();
+	@Test(groups = "SmokeSuite")
+    public void createOrgSelectChemicalFrmDrpDwn() throws IOException
+    {
 	WebDriverUtility wUtil=new WebDriverUtility();
+	JavaUtility jUtil=new JavaUtility();
+	ExcelFileUtility eUtil=new ExcelFileUtility();
+	PropertyFileUtility putil=new PropertyFileUtility();
 	
-	//Read all the required data
-	String URL=pUtil.readDataFromPropertyFile("url");
-	String BROWSER = pUtil.readDataFromPropertyFile("browser");
-	String USERNAME = pUtil.readDataFromPropertyFile("username");
-	String PASSWORD = pUtil.readDataFromPropertyFile("password");
-	
+	String BROWSER=putil.readDataFromPropertyFile("browser");
+	String URL=putil.readDataFromPropertyFile("url");
+	String USERNAME=putil.readDataFromPropertyFile("username");
+	String PASSWORD=putil.readDataFromPropertyFile("password");
+		
 	String ORGNAME=eUtil.readDataFromExcel("Organization", 1, 2)+jUtil.getRandomNum();
 	
+	System.setProperty("webdriver.chrome.driver", "V:\\Selenium Drivers\\chromedriver.exe");
 	ChromeOptions option=new ChromeOptions();
 	option.addArguments("--remote-allow-origins=*");
-	
-	System.setProperty("webdriver.chrome.driver", "V:\\Selenium Drivers\\chromedriver.exe");
-	
 	WebDriver driver=null;
-	//Step-1:Launch Browser
 	if(BROWSER.equalsIgnoreCase("chrome"))
 	{
 		driver=new ChromeDriver(option);
 	}
 	else if(BROWSER.equalsIgnoreCase("firefox"))
 	{
+		WebDriverManager.firefoxdriver().setup();
 		driver=new FirefoxDriver();
 	}
 	else
 	{
 		System.out.println("Invalid Browser");
 	}
-	wUtil.maximizeTheWindow(driver);
-	wUtil.waitUntilPageLoad(driver);
+
 	driver.get(URL);
-	
-	//Step-2:Login to Application
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	driver.manage().window().maximize();
 	LoginPage lp=new LoginPage(driver);
-	lp.loginToApp(USERNAME,PASSWORD);
+	lp.loginToApp(USERNAME, PASSWORD);
 	
-	//Step-3:Navigate to Organization Link
 	HomePage hp=new HomePage(driver);
 	hp.clickOnOrgLnk();
 	
-	//Step-4:Click on create Organization LookUp Image
 	OrganizationsPage op=new OrganizationsPage(driver);
 	op.clickOnCreateOrgLookUpImg();
 	
-	//Step-5:Create Organization with mandiatory fields
 	CreateNewOrganizationPage cnop=new CreateNewOrganizationPage(driver);
 	cnop.createNewOrg(ORGNAME);
 	
-	//Step-6:Validation
-	OrganizationInfoPage oip=new OrganizationInfoPage(driver);
-	String OrgHeader=oip.getOrgHeader();
-	if(OrgHeader.contains(ORGNAME))
-	{
-		System.out.println("---pass---");
-	}
-	else
-	{
-		System.out.println("---fail---");
-	}
-	//Step-7:Logout
-	hp.logOutOfApp(driver);
-	System.out.println("--SignOut Successfull--");
-//	driver.close();
+	WebDriverUtility wutil=new WebDriverUtility();
+	WebElement ele=driver.findElement(By.xpath("//select[@name='industry']"));
+	wutil.handleDropdown(ele, 4);
 
-	
+    String Header=driver.findElement(By.className("dvHeaderText")).getText();
+    
+    if(Header.contains(ORGNAME))
+    {
+    	System.out.println("Pass");
+    }
+    else
+    {
+    	System.out.println("Fail");
+    }
+    HomePage hpp=new HomePage(driver);
+    hpp.logOutOfApp(driver);
+    System.out.println("Logout successfulll");
+
 }
 }
