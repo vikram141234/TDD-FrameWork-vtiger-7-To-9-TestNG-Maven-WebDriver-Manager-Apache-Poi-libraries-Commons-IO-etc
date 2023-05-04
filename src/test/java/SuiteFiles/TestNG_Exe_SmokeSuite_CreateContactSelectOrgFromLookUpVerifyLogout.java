@@ -23,7 +23,7 @@ import vtigerObjectRepository.OrganizationsPage;
 public class TestNG_Exe_SmokeSuite_CreateContactSelectOrgFromLookUpVerifyLogout {
 	
 
-	    @Test(groups="SmokeSuite")
+	    @Test
 	    public void createConSelectOrgFrmLookupIcon() throws IOException
 	    {
 		WebDriverUtility wUtil=new WebDriverUtility();
