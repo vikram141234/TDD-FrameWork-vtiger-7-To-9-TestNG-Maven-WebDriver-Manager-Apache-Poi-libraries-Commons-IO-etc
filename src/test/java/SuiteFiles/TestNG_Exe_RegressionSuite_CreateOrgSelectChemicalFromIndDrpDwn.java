@@ -86,7 +86,7 @@ public class TestNG_Exe_RegressionSuite_CreateOrgSelectChemicalFromIndDrpDwn {
 	    }
 	    HomePage hpp=new HomePage(driver);
 	    hpp.logOutOfApp(driver);
-	    System.out.println("Logout successfulll");
+	    System.out.println("Logout successfullll");
 	    
 
 
