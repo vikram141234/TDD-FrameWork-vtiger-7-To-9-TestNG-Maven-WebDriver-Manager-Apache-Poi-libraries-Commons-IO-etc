@@ -23,7 +23,7 @@ import vtigerObjectRepository.OrganizationsPage;
 
 public class TestNG_Exe_SmokeSuite_CreateOrgChemical {
 
-	@Test(groups = "SmokeSuite")
+	@Test(groups = "SmokeSuiteee")
     public void createOrgSelectChemicalFrmDrpDwn() throws IOException
     {
 	WebDriverUtility wUtil=new WebDriverUtility();

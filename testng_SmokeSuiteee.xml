@@ -4,11 +4,11 @@
   <test thread-count="5" name="Test">
 	  <groups>
 		  <run>
-			  <include name="SmokeSuite"></include>
+			  <include name="SmokeSuiteee"></include>
 		  </run>
 	  </groups>
     <classes>
-      <class name="SuiteFiles.TestNG_CreateOrgVerify"/>
+      <class name="SuiteFiles.TestNG_Exe_SmokeSuite_CreateOrgChemical"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

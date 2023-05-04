@@ -2,17 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="SmokeSuiteee"/>
+      </run>
+    </groups>
     <classes>
-      <class name="SuiteFiles.TestNG_Exe_CreateOrgSaveVerify">
+      <class name="SuiteFiles.TestNG_Exe_SmokeSuite_CreateOrgChemical">
         <methods>
-          <include name="createOrgVerify"/>
+          <include name="createOrgSelectChemicalFrmDrpDwn"/>
         </methods>
-      </class> <!-- SuiteFiles.TestNG_Exe_CreateOrgSaveVerify -->
-      <class name="SuiteFiles.TestNG_Exe_CreateNewContactVerify">
-        <methods>
-          <include name="createNewContact"/>
-        </methods>
-      </class> <!-- SuiteFiles.TestNG_Exe_CreateNewContactVerify -->
+      </class> <!-- SuiteFiles.TestNG_Exe_SmokeSuite_CreateOrgChemical -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
