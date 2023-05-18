@@ -9,9 +9,9 @@ public class RetryAnaliserPracticeClass {
 	    @Test(retryAnalyzer =RetryAnaliserTopics.RetryAnaliserClassImplementationClass.class)
 	    //After declaring retryAnaliser we have to give the implementation class qualified path 
 		public void analiserPractice()
-		{
-			Assert.fail();
-			System.out.println("Hi");
+		{   //if we give fail it will fails
+		//	Assert.fail();                   //if Assert.fail() is not there it will run by defaultly 3+1 times 
+			System.out.println("Hi");   
 		}
 	    //This script is getting to fail coz we failed it by giving Assert.fail();
 	    

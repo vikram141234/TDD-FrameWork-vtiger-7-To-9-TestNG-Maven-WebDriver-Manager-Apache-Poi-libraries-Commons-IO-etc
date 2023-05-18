@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CombinationalPractice.DebuggingPractice">
+      <class name="RetryAnaliserTopics.RetryAnaliserPracticeClass">
         <methods>
-          <include name="test"/>
+          <include name="analiserPractice"/>
         </methods>
-      </class> <!-- CombinationalPractice.DebuggingPractice -->
+      </class> <!-- RetryAnaliserTopics.RetryAnaliserPracticeClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
