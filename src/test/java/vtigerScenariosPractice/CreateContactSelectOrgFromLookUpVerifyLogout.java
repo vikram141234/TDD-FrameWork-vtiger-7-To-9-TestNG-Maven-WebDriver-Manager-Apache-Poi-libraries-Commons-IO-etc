@@ -19,6 +19,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class CreateContactSelectOrgFromLookUpVerifyLogout {
 
 	public static void main(String[] args) throws IOException {
@@ -36,6 +38,7 @@ public class CreateContactSelectOrgFromLookUpVerifyLogout {
 		Cell ce = rw.getCell(0);
 		String Contact = ce.getStringCellValue();
 		
+		System.setProperty("webdriver.chrome.driver", "V:\\AdvanceSeleniumPracticeFolder\\Chrome Drivers\\chromedriver.exe");
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("--remote-allow-origins=*");
 		WebDriver driver=new ChromeDriver(option);
@@ -55,7 +58,7 @@ public class CreateContactSelectOrgFromLookUpVerifyLogout {
 		}
 		driver.findElement(By.linkText("Vicky522")).click();
 		driver.switchTo().window(parent);
-		driver.findElement(By.xpath("//input[@title='Save [Alt+S]']")).click();
+/*		driver.findElement(By.xpath("//input[@title='Save [Alt+S]']")).click();
 		String Header=driver.findElement(By.className("dvHeaderText")).getText();
 		String Org=driver.findElement(By.className("dvtCellLabel")).getText();
 		if(Header.contains(Contact))
@@ -74,7 +77,7 @@ public class CreateContactSelectOrgFromLookUpVerifyLogout {
 		Actions act=new Actions(driver);
 		act.moveToElement(ele).perform();
 		driver.findElement(By.linkText("Sign Out")).click();
-
+*/
 	}
 
 }

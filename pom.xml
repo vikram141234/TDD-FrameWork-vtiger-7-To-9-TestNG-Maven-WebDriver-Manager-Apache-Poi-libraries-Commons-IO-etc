@@ -71,7 +71,12 @@
 </dependency>
 	 
 	
-  </dependencies>
+  <dependency>
+  	<groupId>Cucumber.BDD</groupId>
+  	<artifactId>Vtiger.BDD.Cucumber</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  </dependency>
+</dependencies>
   
 
 <profiles>

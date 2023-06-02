@@ -45,7 +45,7 @@ public class TestNG_Exe_CreateNewContactVerify {
 				ChromeOptions option=new ChromeOptions();
 				option.addArguments("--remote-allow-origins=*");
 				
-				System.setProperty("webdriver.chrome.driver", "V:\\Selenium Drivers\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "V:\\AdvanceSeleniumChaitraMamBatch2\\Chrome Drivers\\chromedriver.exe");
 				
 				WebDriver driver=null;
 				//Step-1:Launch Browser

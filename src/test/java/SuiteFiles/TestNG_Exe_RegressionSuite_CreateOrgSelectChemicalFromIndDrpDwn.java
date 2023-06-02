@@ -37,7 +37,7 @@ public class TestNG_Exe_RegressionSuite_CreateOrgSelectChemicalFromIndDrpDwn {
 			
 		String ORGNAME=eUtil.readDataFromExcel("Organization", 1, 2)+jUtil.getRandomNum();
 		
-		System.setProperty("webdriver.chrome.driver", "V:\\Selenium Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "V:\\AdvanceSeleniumChaitraMamBatch2\\Chrome Drivers\\chromedriver.exe");
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("--remote-allow-origins=*");
 		WebDriver driver=null;
@@ -91,5 +91,10 @@ public class TestNG_Exe_RegressionSuite_CreateOrgSelectChemicalFromIndDrpDwn {
 
 
 	}
+	    @Test(groups = "Nani")
+	    public void gvc()
+	    {
+	    	System.out.println("Vikram");
+	    }
 
 }

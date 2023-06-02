@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RetryAnaliserTopics.RetryAnaliserPracticeClass">
+      <class name="SuiteFiles.TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout">
         <methods>
-          <include name="analiserPractice"/>
+          <include name="createConSelectOrgFrmLookupIcon"/>
         </methods>
-      </class> <!-- RetryAnaliserTopics.RetryAnaliserPracticeClass -->
+      </class> <!-- SuiteFiles.TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

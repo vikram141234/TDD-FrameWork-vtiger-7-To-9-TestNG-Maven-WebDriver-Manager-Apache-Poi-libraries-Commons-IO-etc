@@ -4,6 +4,7 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -39,18 +40,24 @@ public class TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout {
 		String LASTNAME =eUtil.readDataFromExcel("Contacts", 4, 2);
 		String ORGNAME=eUtil.readDataFromExcel("Contacts", 4, 3)+jUtil.getRandomNum();
 		
-		System.setProperty("webdriver.chrome.driver", "V:\\Selenium Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "V:\\AdvanceSeleniumChaitraMamBatch2\\Chrome Drivers\\chromedriver.exe");
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("--remote-allow-origins=*");
 		WebDriver driver=null;
-		if(BROWSER.equalsIgnoreCase("chrome"))
+		if(BROWSER.equalsIgnoreCase("Chrome"))
 		{
+			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver(option);
 		}
-		else if(BROWSER.equalsIgnoreCase("firefox"))
+		else if(BROWSER.equalsIgnoreCase("Firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
+		}
+		else if(BROWSER.equalsIgnoreCase("Edge"))
+		{
+			WebDriverManager.edgedriver().setup();
+			driver=new EdgeDriver();
 		}
 		else
 		{

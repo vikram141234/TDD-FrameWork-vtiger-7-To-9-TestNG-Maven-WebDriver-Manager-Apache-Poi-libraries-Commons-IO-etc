@@ -4,8 +4,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.Random;
 import java.util.Set;
 
+import org.apache.commons.math3.fitting.leastsquares.GaussNewtonOptimizer;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -44,7 +46,8 @@ public class CreateContactWithOrganizations extends BaseClass{
 		String LASTNAME = eUtil.readDataFromExcel("Contacts", 4, 2);
 		String ORGNAME = eUtil.readDataFromExcel("Contacts", 4, 3) + jUtil.getRandomNum();
 
-		
+		System.setProperty("webdriver.chrome.driver", "V:\\Selenium Drivers2\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		WebDriver driver=null;
@@ -84,9 +87,12 @@ public class CreateContactWithOrganizations extends BaseClass{
 
 		// Step 7: Validate
 		String OrgHeader = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
-		if (OrgHeader.contains(ORGNAME)) {
+		if (OrgHeader.contains(ORGNAME)) 
+		{
 			System.out.println(OrgHeader + " --> Organization created successfully");
-		} else {
+		} 
+		else 
+		{
 			System.out.println("Organization creation failed");
 		}
 

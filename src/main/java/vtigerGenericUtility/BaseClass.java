@@ -38,12 +38,12 @@ public class BaseClass {
 		{
 			System.out.println("---Database Connection Successfully---");
 		}
-//      @Parameters("BROWSER")       //To launch browser at Test Level We Can Also launch browser at Test Level        //Only AfterTest For Distributed Parallel Exe
-//	  @BeforeTest
-	  @BeforeClass(groups={"SmokeSuite","RegressionSuite"})
-		public void bcConfig(/*String BROWSER*/) throws IOException
-		{  // have to comment Browser in down in args it will read from xml suite file
-			String BROWSER = pUtility.readDataFromPropertyFile("browser");
+      @Parameters("BROWSER")      //This is only for crossbrowser
+	  @BeforeTest                 //This is to launch browser at Test Level. We Can Also launch browser at Test Level        //Only AfterTest For CrossBrowser Exe
+//	  @BeforeClass(groups={"SmokeSuite","RegressionSuite"})
+		public void bcConfig(String BROWSER/*only for cross browser*/) throws IOException
+		{  // have to comment Browser in down and give in args it will read browser from xml suite file
+			//String BROWSER = pUtility.readDataFromPropertyFile("browser");
 			String URL = pUtility.readDataFromPropertyFile("url");
 			ChromeOptions options=new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
@@ -51,13 +51,13 @@ public class BaseClass {
 			{
 				WebDriverManager.chromedriver().setup();
 				driver=new ChromeDriver(options);
-				System.out.println("Browser Launched Successfully");
+				System.out.println("Chrome Browser Launched Successfully");
 			}
 			else if(BROWSER.equalsIgnoreCase("Firefox"))
 			{
 				WebDriverManager.firefoxdriver().setup();
 				driver=new FirefoxDriver(); 
-				System.out.println("Browser Launched Successfully");
+				System.out.println("Firefox Browser Launched Successfully");
 			}
 			else 
 			{
@@ -87,8 +87,8 @@ public class BaseClass {
 			hPage.logOutOfApp(driver);
 			System.out.println("Logout Successfully");
 		}
-//	@AfterTest  //View Details at Before Class Annotation
-	@AfterClass(groups={"SmokeSuite","RegressionSuite"})
+	@AfterTest  //View Details at Before Class Annotation
+//	@AfterClass(groups={"SmokeSuite","RegressionSuite"})
 		public void acConfig()
 		{
 			driver.quit();

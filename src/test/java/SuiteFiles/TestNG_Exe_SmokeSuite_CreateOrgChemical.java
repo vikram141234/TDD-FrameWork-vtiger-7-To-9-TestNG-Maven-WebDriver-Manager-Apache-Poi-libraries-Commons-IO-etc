@@ -23,7 +23,7 @@ import vtigerObjectRepository.OrganizationsPage;
 
 public class TestNG_Exe_SmokeSuite_CreateOrgChemical {
 
-	@Test(groups = "SmokeSuiteee")
+	@Test(groups = "SmokeSuite")
     public void createOrgSelectChemicalFrmDrpDwn() throws IOException
     {
 	WebDriverUtility wUtil=new WebDriverUtility();
@@ -38,7 +38,7 @@ public class TestNG_Exe_SmokeSuite_CreateOrgChemical {
 		
 	String ORGNAME=eUtil.readDataFromExcel("Organization", 1, 2)+jUtil.getRandomNum();
 	
-	System.setProperty("webdriver.chrome.driver", "V:\\Selenium Drivers\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "V:\\AdvanceSeleniumChaitraMamBatch2\\Chrome Drivers\\chromedriver.exe");
 	ChromeOptions option=new ChromeOptions();
 	option.addArguments("--remote-allow-origins=*");
 	WebDriver driver=null;

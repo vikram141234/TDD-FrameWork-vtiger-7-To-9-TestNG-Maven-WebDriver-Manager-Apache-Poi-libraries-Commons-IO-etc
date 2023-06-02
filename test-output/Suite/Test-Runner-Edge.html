@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test-Runner-2</title>
+<title>TestNG:  Test-Runner-Edge</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test-Runner-2</h2><table border='1' align="center">
+<h2 align='center'>Test-Runner-Edge</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 01 22:21:22 IST 2023</td>
+<td>Started on:</td><td>Thu Jun 01 20:00:07 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18887 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12200 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='SuiteFiles.TestNG_Exe_CreateOrgCreateContactVerify.createOrgVerify()'><b>createOrgVerify</b><br>Test class: SuiteFiles.TestNG_Exe_CreateOrgCreateContactVerify</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+<td title='SuiteFiles.TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout.createConSelectOrgFrmLookupIcon()'><b>createConSelectOrgFrmLookupIcon</b><br>Test class: SuiteFiles.TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=113.0.5672.129)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c8a152c7102ed9f73230a3479bae39dc, findElement {using=xpath, value=//span[@class=&apos;dvHeaderText&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62968/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c8a152c7102ed9f73230a3479bae39dc
+Command: [8125574367a98f4dde8b09361fdb25b4, findElement {using=xpath, value=//img[@title=&apos;Create Organization...&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51361/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8125574367a98f4dde8b09361fdb25b4
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -98,24 +98,24 @@ Session ID: c8a152c7102ed9f73230a3479bae39dc
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.getText(Unknown Source)
-	at vtigerObjectRepository.OrganizationInfoPage.getOrgHeader(OrganizationInfoPage.java:30)
-	at SuiteFiles.TestNG_Exe_CreateOrgCreateContactVerify.createOrgVerify(TestNG_Exe_CreateOrgCreateContactVerify.java:81)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at vtigerObjectRepository.OrganizationsPage.clickOnCreateOrgLookUpImg(OrganizationsPage.java:29)
+	at SuiteFiles.TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout.createConSelectOrgFrmLookupIcon(TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout.java:78)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace917763250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace917763250'><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace956855173", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace956855173'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=113.0.5672.129)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c8a152c7102ed9f73230a3479bae39dc, findElement {using=xpath, value=//span[@class=&apos;dvHeaderText&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62968/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c8a152c7102ed9f73230a3479bae39dc
+Command: [8125574367a98f4dde8b09361fdb25b4, findElement {using=xpath, value=//img[@title=&apos;Create Organization...&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51361/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8125574367a98f4dde8b09361fdb25b4
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -132,9 +132,9 @@ Session ID: c8a152c7102ed9f73230a3479bae39dc
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.getText(Unknown Source)
-	at vtigerObjectRepository.OrganizationInfoPage.getOrgHeader(OrganizationInfoPage.java:30)
-	at SuiteFiles.TestNG_Exe_CreateOrgCreateContactVerify.createOrgVerify(TestNG_Exe_CreateOrgCreateContactVerify.java:81)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at vtigerObjectRepository.OrganizationsPage.clickOnCreateOrgLookUpImg(OrganizationsPage.java:29)
+	at SuiteFiles.TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout.createConSelectOrgFrmLookupIcon(TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout.java:78)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -157,8 +157,8 @@ Session ID: c8a152c7102ed9f73230a3479bae39dc
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>18</td>
-<td>SuiteFiles.TestNG_Exe_CreateOrgCreateContactVerify@10e31a9a</td></tr>
+<td>12</td>
+<td>SuiteFiles.TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout@436813f3</td></tr>
 </table><p>
 </body>
 </html>
