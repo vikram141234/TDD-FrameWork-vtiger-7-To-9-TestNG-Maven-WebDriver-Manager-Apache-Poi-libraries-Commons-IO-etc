@@ -17,8 +17,8 @@ public class ContactInfoPage {//Rule-1:Create a seperate class for every webpage
     //Rule-2:Identify the elements using annotations
 	@FindBy(xpath="//span[@class='dvHeaderText']")private WebElement contactHeaderText;
 	
-	//Rule-3:Create a constructor to initilise these elements
-	public ContactInfoPage(WebDriver driver)
+	//Rule-3:Create a constructor to initilise these elements   //span[@class='dvHeaderText']   old
+	public ContactInfoPage(WebDriver driver)     //span[@class='dvHeaderText']
 	{
 		PageFactory.initElements(driver, this);
 	}

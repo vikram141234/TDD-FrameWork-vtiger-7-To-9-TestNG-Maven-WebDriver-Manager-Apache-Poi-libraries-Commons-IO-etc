@@ -10,6 +10,7 @@ import vtigerObjectRepository.ContactsPage;
 import vtigerObjectRepository.CreateNewContactPage;
 import vtigerObjectRepository.CreateNewOrganizationPage;
 import vtigerObjectRepository.HomePage;
+import vtigerObjectRepository.OrganizationInfoPage;
 import vtigerObjectRepository.OrganizationsPage;
 
 public class CreateContactWithOrganization extends BaseClass{
@@ -27,7 +28,21 @@ public class CreateContactWithOrganization extends BaseClass{
 	    	oPage.clickOnCreateOrgLookUpImg();
 	    	
 	    	CreateNewOrganizationPage cnoPage=new CreateNewOrganizationPage(driver);
-	    	cnoPage.createNewOrgSwitchToContacts(ORGNAME);
+	    	cnoPage.createNewOrg(ORGNAME);
+	    	
+	    	OrganizationInfoPage oiPage=new OrganizationInfoPage(driver);
+	    	String ORGHEADER = oiPage.getOrgHeader();
+	    	
+	    	if(ORGHEADER.contains(ORGNAME))
+	    	{
+	    		System.out.println("Pass");
+	    	}
+	    	else 
+	    	{
+				System.out.println("Fail");
+			}
+	    	
+	    	hPage.clickOnContactLnk();
 	    
 	    	ContactsPage cPage=new ContactsPage(driver);
 	    	cPage.ClickOnCreateContactLookUpImg();

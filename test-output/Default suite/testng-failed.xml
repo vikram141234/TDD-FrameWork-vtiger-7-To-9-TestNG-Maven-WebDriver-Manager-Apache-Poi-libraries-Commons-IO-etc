@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SuiteFiles.TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout">
+      <class name="vtiger.Practice.CreateContactWithOrganization">
         <methods>
-          <include name="createConSelectOrgFrmLookupIcon"/>
+          <include name="bsConfig"/>
+          <include name="bmConfig"/>
+          <include name="createContactWithOrg"/>
+          <include name="amConfig"/>
+          <include name="bcConfig"/>
+          <include name="asConfig"/>
+          <include name="acConfig"/>
         </methods>
-      </class> <!-- SuiteFiles.TestNG_Exe_CreateContactSelectOrgFromLookUpVerifyLogout -->
+      </class> <!-- vtiger.Practice.CreateContactWithOrganization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

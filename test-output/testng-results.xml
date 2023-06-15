@@ -1,32 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-01T22:57:18 IST" name="Suite" finished-at="2023-06-01T22:57:19 IST" duration-ms="707">
+  <suite started-at="2023-06-15T19:42:26 IST" name="Default suite" finished-at="2023-06-15T19:42:54 IST" duration-ms="27387">
     <groups>
     </groups>
-    <test started-at="2023-06-01T22:57:18 IST" name="Test-Runner-Chrome" finished-at="2023-06-01T22:57:19 IST" duration-ms="707">
-      <class name="SuiteFiles.TestNG_Exe_CreateNewContactVerify">
-        <test-method signature="createNewContact()[pri:0, instance:SuiteFiles.TestNG_Exe_CreateNewContactVerify@441772e]" started-at="2023-06-01T22:57:18 IST" name="createNewContact" finished-at="2023-06-01T22:57:18 IST" duration-ms="669" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
+    <test started-at="2023-06-15T19:42:26 IST" name="Default test" finished-at="2023-06-15T19:42:54 IST" duration-ms="27387">
+      <class name="vtiger.Practice.CreateConWithOrg">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:26 IST" name="bsConfig" finished-at="2023-06-15T19:42:26 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bsConfig -->
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:26 IST" name="bcConfig" finished-at="2023-06-15T19:42:30 IST" duration-ms="4115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:30 IST" name="bmConfig" finished-at="2023-06-15T19:42:33 IST" duration-ms="2684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="createConWithOrg()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:33 IST" name="createConWithOrg" finished-at="2023-06-15T19:42:51 IST" duration-ms="17538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createConWithOrg -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:51 IST" name="amConfig" finished-at="2023-06-15T19:42:54 IST" duration-ms="3007" status="FAIL">
+          <exception class="org.openqa.selenium.json.JsonException">
             <message>
-              <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'VICKY', ip: '192.168.0.115', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [4c5b2c49-a978-42ed-8535-dad0b84a1e13, actions {actions=[org.openqa.selenium.interactions.Sequence@7e87ef9e]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:58990, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27852, moz:profile: C:\Users\vikra\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58990/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:311)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
-at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
-at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at SuiteFiles.TestNG_Exe_CreateNewContactVerify.createNewContact(TestNG_Exe_CreateNewContactVerify.java:58)
+              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'VICKY', ip: '192.168.0.115', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [4c5b2c49-a978-42ed-8535-dad0b84a1e13, actions {actions=[org.openqa.selenium.interactions.Sequence@7e87ef9e]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:58990, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27852, moz:profile: C:\Users\vikra\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58990/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+at org.openqa.selenium.json.Json.toJson(Json.java:42)
+at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:615)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+at vtigerGenericUtility.WebDriverUtility.mouseHoverAction(WebDriverUtility.java:127)
+at vtigerObjectRepository.HomePage.logOutOfApp(HomePage.java:71)
+at vtigerGenericUtility.BaseClass.amConfig(BaseClass.java:87)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -37,67 +95,75 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewContact -->
-      </class> <!-- SuiteFiles.TestNG_Exe_CreateNewContactVerify -->
-    </test> <!-- Test-Runner-Chrome -->
-    <test started-at="2023-06-01T22:57:18 IST" name="Test-Runner-Firefox" finished-at="2023-06-01T22:57:19 IST" duration-ms="707">
-      <class name="SuiteFiles.TestNG_Exe_CreateNewContactVerify">
-        <test-method signature="createNewContact()[pri:0, instance:SuiteFiles.TestNG_Exe_CreateNewContactVerify@131774fe]" started-at="2023-06-01T22:57:18 IST" name="createNewContact" finished-at="2023-06-01T22:57:18 IST" duration-ms="669" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:311)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
-at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
-at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at SuiteFiles.TestNG_Exe_CreateNewContactVerify.createNewContact(TestNG_Exe_CreateNewContactVerify.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'VICKY', ip: '192.168.0.115', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+at org.openqa.selenium.json.Json.toJson(Json.java:40)
+... 43 more
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+... 64 more
+Caused by: org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'VICKY', ip: '192.168.0.115', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [4c5b2c49-a978-42ed-8535-dad0b84a1e13, findElement {using=xpath, value=//img[@src='themes/softed/images/user.PNG']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:58990, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27852, moz:profile: C:\Users\vikra\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58990/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy21.getWrappedElement(Unknown Source)
+at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:260)
+at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:209)
+at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+... 66 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewContact -->
-      </class> <!-- SuiteFiles.TestNG_Exe_CreateNewContactVerify -->
-    </test> <!-- Test-Runner-Firefox -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:54 IST" name="acConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1686838374202" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:54 IST" name="asConfig" finished-at="2023-06-15T19:42:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asConfig -->
+      </class> <!-- vtiger.Practice.CreateConWithOrg -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

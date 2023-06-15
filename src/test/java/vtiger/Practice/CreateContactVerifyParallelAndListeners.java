@@ -27,7 +27,7 @@ public class CreateContactVerifyParallelAndListeners extends BaseClass{
 		ContactsPage cPage=new ContactsPage(driver);
 		cPage.ClickOnCreateContactLookUpImg();
 		
-	 Assert.fail();
+//	 Assert.fail();
 		CreateNewContactPage cnPage=new CreateNewContactPage(driver);
 		cnPage.createNewContact(CONTACTNAME);
 	
