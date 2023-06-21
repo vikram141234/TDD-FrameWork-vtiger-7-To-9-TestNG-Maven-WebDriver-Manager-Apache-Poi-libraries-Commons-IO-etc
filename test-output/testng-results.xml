@@ -2,46 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-15T19:42:26 IST" name="Default suite" finished-at="2023-06-15T19:42:54 IST" duration-ms="27387">
+  <suite started-at="2023-06-21T10:29:40 IST" name="Default suite" finished-at="2023-06-21T10:30:08 IST" duration-ms="28064">
     <groups>
     </groups>
-    <test started-at="2023-06-15T19:42:26 IST" name="Default test" finished-at="2023-06-15T19:42:54 IST" duration-ms="27387">
+    <test started-at="2023-06-21T10:29:40 IST" name="Default test" finished-at="2023-06-21T10:30:08 IST" duration-ms="28064">
       <class name="vtiger.Practice.CreateConWithOrg">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:26 IST" name="bsConfig" finished-at="2023-06-15T19:42:26 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-21T10:29:40 IST" name="bsConfig" finished-at="2023-06-21T10:29:40 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:26 IST" name="bcConfig" finished-at="2023-06-15T19:42:30 IST" duration-ms="4115" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-21T10:29:40 IST" name="bcConfig" finished-at="2023-06-21T10:29:47 IST" duration-ms="6922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:30 IST" name="bmConfig" finished-at="2023-06-15T19:42:33 IST" duration-ms="2684" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-21T10:29:47 IST" name="bmConfig" finished-at="2023-06-21T10:29:49 IST" duration-ms="2440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="createConWithOrg()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:33 IST" name="createConWithOrg" finished-at="2023-06-15T19:42:51 IST" duration-ms="17538" status="PASS">
+        <test-method signature="createConWithOrg()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-21T10:29:49 IST" name="createConWithOrg" finished-at="2023-06-21T10:30:07 IST" duration-ms="17145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createConWithOrg -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:51 IST" name="amConfig" finished-at="2023-06-15T19:42:54 IST" duration-ms="3007" status="FAIL">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-21T10:30:07 IST" name="amConfig" finished-at="2023-06-21T10:30:08 IST" duration-ms="1505" status="FAIL">
           <exception class="org.openqa.selenium.json.JsonException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'VICKY', ip: '192.168.0.115', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c5b2c49-a978-42ed-8535-dad0b84a1e13, actions {actions=[org.openqa.selenium.interactions.Sequence@7e87ef9e]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:58990, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27852, moz:profile: C:\Users\vikra\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58990/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13]]>
+System info: host: 'VICKY', ip: '192.168.0.105', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee037c9e69a093b43effb03355e59639, actions {actions=[org.openqa.selenium.interactions.Sequence@78422efb]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55727/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee037c9e69a093b43effb03355e59639]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'VICKY', ip: '192.168.0.115', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c5b2c49-a978-42ed-8535-dad0b84a1e13, actions {actions=[org.openqa.selenium.interactions.Sequence@7e87ef9e]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:58990, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27852, moz:profile: C:\Users\vikra\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58990/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
+System info: host: 'VICKY', ip: '192.168.0.105', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee037c9e69a093b43effb03355e59639, actions {actions=[org.openqa.selenium.interactions.Sequence@78422efb]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55727/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee037c9e69a093b43effb03355e59639
 at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
 at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
 at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
@@ -109,7 +109,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'VICKY', ip: '192.168.0.115', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+System info: host: 'VICKY', ip: '192.168.0.105', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: driver.version: RemoteWebDriver
 at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
 at org.openqa.selenium.json.Json.toJson(Json.java:40)
@@ -119,30 +119,18 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
 ... 64 more
-Caused by: org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //img[@src='themes/softed/images/user.PNG']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'VICKY', ip: '192.168.0.115', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c5b2c49-a978-42ed-8535-dad0b84a1e13, findElement {using=xpath, value=//img[@src='themes/softed/images/user.PNG']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:58990, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27852, moz:profile: C:\Users\vikra\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58990/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+System info: host: 'VICKY', ip: '192.168.0.105', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy21.getWrappedElement(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy20.getWrappedElement(Unknown Source)
 at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:260)
 at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:209)
 at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
@@ -155,11 +143,11 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:54 IST" name="acConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1686838374202" status="SKIP">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-21T10:30:08 IST" name="acConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1687323608581" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-15T19:42:54 IST" name="asConfig" finished-at="2023-06-15T19:42:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:vtiger.Practice.CreateConWithOrg@35cabb2a]" started-at="2023-06-21T10:30:08 IST" name="asConfig" finished-at="2023-06-21T10:30:08 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->

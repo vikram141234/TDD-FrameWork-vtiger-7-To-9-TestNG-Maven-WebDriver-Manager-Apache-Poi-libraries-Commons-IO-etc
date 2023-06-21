@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 15 19:42:26 IST 2023</td>
+<td>Started on:</td><td>Wed Jun 21 10:29:40 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27387 ms)</td>
+<tr><td>Total time:</td><td>28 seconds (28064 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -78,11 +78,11 @@ function toggleAllBoxes() {
 <td title='vtiger.Practice.CreateConWithOrg.amConfig()'><b>amConfig</b><br>Test class: vtiger.Practice.CreateConWithOrg</td>
 <td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.115&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c5b2c49-a978-42ed-8535-dad0b84a1e13, actions {actions=[org.openqa.selenium.interactions.Sequence@7e87ef9e]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:58990, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27852, moz:profile: C:\Users\vikra\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58990/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
+System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee037c9e69a093b43effb03355e59639, actions {actions=[org.openqa.selenium.interactions.Sequence@78422efb]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55727/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee037c9e69a093b43effb03355e59639
 	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
 	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
 	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
@@ -150,7 +150,7 @@ Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.115&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: driver.version: RemoteWebDriver
 		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
 		at org.openqa.selenium.json.Json.toJson(Json.java:40)
@@ -160,44 +160,32 @@ Caused by: java.lang.reflect.InvocationTargetException
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
 	... 64 more
-Caused by: org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //img[@src=&apos;themes/softed/images/user.PNG&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.115&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c5b2c49-a978-42ed-8535-dad0b84a1e13, findElement {using=xpath, value=//img[@src=&apos;themes/softed/images/user.PNG&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:58990, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27852, moz:profile: C:\Users\vikra\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58990/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.getWrappedElement(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.getWrappedElement(Unknown Source)
 	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:260)
 	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:209)
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	... 66 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1093707336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1093707336'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1073041213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1073041213'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.115&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c5b2c49-a978-42ed-8535-dad0b84a1e13, actions {actions=[org.openqa.selenium.interactions.Sequence@7e87ef9e]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:58990, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27852, moz:profile: C:\Users\vikra\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58990/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
+System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee037c9e69a093b43effb03355e59639, actions {actions=[org.openqa.selenium.interactions.Sequence@78422efb]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\vikra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55727/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee037c9e69a093b43effb03355e59639
 	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
 	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
 	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
@@ -265,7 +253,7 @@ Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.115&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: driver.version: RemoteWebDriver
 		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
 		at org.openqa.selenium.json.Json.toJson(Json.java:40)
@@ -275,30 +263,18 @@ Caused by: java.lang.reflect.InvocationTargetException
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
 	... 64 more
-Caused by: org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //img[@src=&apos;themes/softed/images/user.PNG&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.115&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c5b2c49-a978-42ed-8535-dad0b84a1e13, findElement {using=xpath, value=//img[@src=&apos;themes/softed/images/user.PNG&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:58990, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27852, moz:profile: C:\Users\vikra\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58990/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+System info: host: &apos;VICKY&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.getWrappedElement(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.getWrappedElement(Unknown Source)
 	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:260)
 	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:209)
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
@@ -306,7 +282,7 @@ Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	... 66 more
 </pre></div></td>
-<td>3</td>
+<td>1</td>
 <td>vtiger.Practice.CreateConWithOrg@35cabb2a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -319,7 +295,7 @@ Session ID: 4c5b2c49-a978-42ed-8535-dad0b84a1e13
 <tr>
 <td title='vtiger.Practice.CreateConWithOrg.acConfig()'><b>acConfig</b><br>Test class: vtiger.Practice.CreateConWithOrg</td>
 <td></td>
-<td>-1686838374</td>
+<td>-1687323608</td>
 <td>vtiger.Practice.CreateConWithOrg@35cabb2a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
