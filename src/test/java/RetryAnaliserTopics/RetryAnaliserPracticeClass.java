@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 //Thats y we did not give in class level coz all test scripts will not fail
 public class RetryAnaliserPracticeClass {
 //Thats y We will give retryAnaliser in method Level 
-	    @Test(retryAnalyzer =RetryAnaliserTopics.RetryAnaliserClassImplementationClass.class)
+	    @Test(retryAnalyzer =vtigerGenericUtility.RetryAnaliserImplementationClass.class)
 	    //After declaring retryAnaliser we have to give the implementation class qualified path 
 		public void analiserPractice()
 		{   //if we give fail it will fails

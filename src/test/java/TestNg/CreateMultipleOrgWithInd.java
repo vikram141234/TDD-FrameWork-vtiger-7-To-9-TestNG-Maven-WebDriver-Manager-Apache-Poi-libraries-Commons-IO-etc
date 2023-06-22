@@ -27,7 +27,7 @@ import vtigerObjectRepository.OrganizationsPage;
 
 public class CreateMultipleOrgWithInd extends BaseClass{
 	
-	@Test(dataProvider = "multipleData")
+	@Test(dataProvider = "getData")
 	public void createMultipleOrgTest(String ORG,String INDUSTRY) throws IOException
 	{
 		JavaUtility jUtility=new JavaUtility();
@@ -48,7 +48,7 @@ public class CreateMultipleOrgWithInd extends BaseClass{
 	}
 	
 	
-	@DataProvider(name="multipleData")
+	@DataProvider /*(name="multipleData")*/ //OPTIONAL NAME giving beside @Test (dataprovider="multipleData")
 	public Object[][] getData() throws EncryptedDocumentException, IOException
 	{
 		return eUtility.readMultipleDataFromExcel("DataProviderOrgInd");

@@ -1,9 +1,9 @@
-package RetryAnaliserTopics;
+package vtigerGenericUtility;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-public class RetryAnaliserClassImplementationClass implements IRetryAnalyzer{
+public class RetryAnaliserImplementationClass implements IRetryAnalyzer{
 
 	int count=0;        //after doing manually we get to know how many times it will fail
 	int retrycount=3;     //after it will pass based on that we have to give count
@@ -19,7 +19,8 @@ public class RetryAnaliserClassImplementationClass implements IRetryAnalyzer{
 			return true;
 		}
 		return false;
-	}
+	} 
 
+	
 	
 }

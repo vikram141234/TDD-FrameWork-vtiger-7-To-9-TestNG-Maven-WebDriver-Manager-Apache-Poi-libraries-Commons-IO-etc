@@ -24,7 +24,7 @@ import vtigerObjectRepository.LoginPage;
 
 public class CreateMultipleContacts extends BaseClass {
 	
-	@Test(dataProvider ="getData")
+	@Test(dataProvider ="Gvc") 
 	public void createMultipleContacts(String CONTACT) throws IOException
 	{
 		
@@ -48,7 +48,7 @@ public class CreateMultipleContacts extends BaseClass {
 		
 	}
 	
-	@DataProvider
+	@DataProvider(name="Gvc")  //OPTIONAL NAME giving beside @Test(dataprovider="Gvc")
 	public Object[][] getData() throws EncryptedDocumentException, IOException
 	{
 		return eUtility.readMultipleDataFromExcel("DataContacts");
